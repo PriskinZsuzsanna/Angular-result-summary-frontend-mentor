@@ -146,11 +146,24 @@ app-root.container {
   border-radius: 4rem;
   border: none;
   outline: none;
-  background: linear-gradient(hsl(224, 30%, 27%), hsl(224, 30%, 27%));
+  background: linear-gradient(black 1%, hsl(224, 30%, 27%));
+  background: hsl(224, 30%, 27%);
   color: hsl(0, 0%, 100%);
-  transition: all 1s ease-in-out;
   cursor: pointer;
+  position: relative;
 }
-.summary-container button:hover {
+.summary-container button::after {
+  content: "Continue";
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4rem;
   background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+}
+.summary-container button:hover::after {
+  opacity: 1;
 }/*# sourceMappingURL=styles.css.map */

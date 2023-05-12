@@ -21,7 +21,7 @@
         align-items: stretch;
         justify-content: space-evenly;
         gap: 2rem;
-        
+
         .detail {
             width: 100%;
             display: flex;
@@ -29,8 +29,8 @@
             align-items: center;
             padding: 1rem;
             border-radius: 1rem;
-    
-            .left{
+
+            .left {
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -46,13 +46,27 @@
         border-radius: 4rem;
         border: none;
         outline: none;
-        background: linear-gradient($Dark-gray-blue, $Dark-gray-blue);
+        background: linear-gradient(black 1%, $Dark-gray-blue);
+        background: $Dark-gray-blue;
         color: $White;
-        transition: all 1s ease-in-out;
         cursor: pointer;
+        position: relative;
         
-        &:hover {
+        &::after {
+            content: 'Continue';
+            position: absolute;
+            inset:0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4rem;
             background: linear-gradient($Light-slate-blue, $Light-royal-blue);
+            transition: all .5s ease-in-out;
+            opacity: 0;
+        }
+
+        &:hover::after {
+            opacity: 1;
         }
     }
 }
