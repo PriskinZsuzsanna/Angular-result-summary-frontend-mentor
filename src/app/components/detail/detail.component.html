@@ -1,0 +1,12 @@
+<div class="detail" [ngStyle]="{backgroundColor: detail.bg}">
+    <div class="left">
+        <div class="icon">
+            <img src="./assets/images/icon-{{detail.icon}}.svg" alt="">
+        </div>
+        <p class="bold" [ngStyle]="{color: detail.color}">{{detail.category}}</p>
+    </div>
+    <div class="right">
+        <p class="bold">{{detail.score}} <span class="opace">/100</span>
+        </p>
+    </div>
+</div>

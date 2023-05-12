@@ -1,0 +1,102 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+body, app-route {
+  width: 100%;
+  min-height: 100vh;
+  background: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+}
+
+.opace {
+  opacity: 0.7;
+}
+
+.bold {
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.lead {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.result-container {
+  min-height: 44vh;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  color: hsl(0, 0%, 100%);
+  padding-inline: 16%;
+  padding-block: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  text-align: center;
+  border-radius: 0 0 2.5rem 2.5rem;
+}
+.result-container .circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+}
+
+.summary-container {
+  min-height: 56vh;
+  padding-inline: 8%;
+  padding-block: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+.summary-container .details {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+.summary-container .details .detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.summary-container .details .detail .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.summary-container button {
+  padding: 1rem 2rem;
+  font-size: 1.3em;
+  border-radius: 4rem;
+  border: none;
+  outline: none;
+  background: linear-gradient(hsl(224, 30%, 27%), hsl(224, 30%, 27%));
+  color: hsl(0, 0%, 100%);
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+}
+.summary-container button:hover {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}/*# sourceMappingURL=styles.css.map */
