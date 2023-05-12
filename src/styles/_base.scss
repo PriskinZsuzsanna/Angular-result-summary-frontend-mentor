@@ -1,19 +1,44 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: 'Hanken Grotesk', sans-serif;
 }
 
-body, app-route {
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-size: $base-font-size;
+
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: calc($base-font-size * 1.1);
+    }
+}
+
+app-root.container {
     width: 100%;
     min-height: 100vh;
     background: $White;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    font-size: $base-font-size;
+    align-items: stretch;
+
+    @include tablet {
+        width: 90%;
+        max-width: 800px;
+        margin-inline: auto;
+        min-height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-radius: 2rem;
+        box-shadow: 2px 2px 3px #ccc;
+    }
+
 }
 
 .opace {
@@ -26,6 +51,10 @@ body, app-route {
 }
 
 .lead {
-    font-size:  2.5em;
+    font-size: 2.5em;
     font-weight: 700;
+
+    @include tablet {
+        font-size: 4em;
+    }
 }
