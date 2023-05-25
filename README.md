@@ -1,4 +1,4 @@
-# ResultSummaryFrontendMentor
+# Result Summary: Frontend Mentor Challange
 Built with
 
  - Angular
